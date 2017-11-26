@@ -250,7 +250,7 @@ namespace Shops
 
             Product[] products = new Product[]
             {
-                LastOfUs, JustDance4, Destiny2, CallOfDuty, Mario 
+                LastOfUs, JustDance4, Destiny2, CallOfDuty, Mario, Witcher, SunsetOverdrive, Naruto, Resident, TTT, Batman, Halo, PUBG, Uncharted, Fallout
             };
 
             PSGames[] psGames = new PSGames[]
