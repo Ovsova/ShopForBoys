@@ -8,7 +8,7 @@ namespace Shops
         {
             double price = product.GetDiscountPrice(user);
             user.ReduceBalance(price);
-            Console.WriteLine($"{user.Name} купил {product.Name} за {price}. Заказ отправлен на склад");
+            Console.WriteLine($"{user.Name} купила {product.Name} за {price}. Заказ отправлен на склад");
         }
     }
 }

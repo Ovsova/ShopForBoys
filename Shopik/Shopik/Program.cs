@@ -13,7 +13,7 @@ namespace Shops
                 5000,
                 1500
             );
-            Console.WriteLine("Список товаров");
+            Console.WriteLine("Список товаров:");
 
             PSGames LastOfUs = new PSGames(
                 "Last of Us",
@@ -95,7 +95,7 @@ namespace Shops
                 LastOfUs, JustDance4, Destiny2, CallOfDuty, Mario 
             };
 
-            PSGames[] pSGames = new PSGames[]
+            PSGames[] psGames = new PSGames[]
             {
                 LastOfUs
             };
