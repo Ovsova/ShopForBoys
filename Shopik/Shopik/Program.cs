@@ -15,6 +15,7 @@ namespace Shops
             );
             Console.WriteLine("Список товаров:");
 
+            // Писишные игры
             PSGames LastOfUs = new PSGames(
                 "Last of Us",
                 1600,
@@ -30,6 +31,37 @@ namespace Shops
             Console.WriteLine("Наличие VR: " + LastOfUs.VR);
             Console.WriteLine(new String('-', 25));
 
+            PSGames Fallout = new PSGames(
+                "Fallout 4 VR",
+                2000,
+                "Bethesda Game Studios",
+                "RPG",
+                true
+            );
+            Console.WriteLine("Игра на PC");
+            Console.WriteLine("Название: " + Fallout.Name);
+            Console.WriteLine("Цена: " + Fallout.Price);
+            Console.WriteLine("Издеатель: " + Fallout.Publisher);
+            Console.WriteLine("Жанр: " + Fallout.Genre);
+            Console.WriteLine("Наличие VR: " + Fallout.VR);
+            Console.WriteLine(new String('-', 25));
+
+            PSGames Uncharted = new PSGames(
+              "Uncharted 4",
+              3000,
+              "Naughty Dog",
+              "Action - adventure",
+              false
+          );
+            Console.WriteLine("Игра на PC");
+            Console.WriteLine("Название: " + Uncharted.Name);
+            Console.WriteLine("Цена: " + Uncharted.Price);
+            Console.WriteLine("Издеатель: " + Uncharted.Publisher);
+            Console.WriteLine("Жанр: " + Uncharted.Genre);
+            Console.WriteLine("Наличие VR: " + Uncharted.VR);
+            Console.WriteLine(new String('-', 25));
+
+            //иксбоксовские игры
             XBOXGames JustDance4 = new XBOXGames(
                 "JustDance 4",
                 1800,
@@ -45,6 +77,37 @@ namespace Shops
             Console.WriteLine("Использование Web-камеры: " + JustDance4.AvailabilityOfWebcam);
             Console.WriteLine(new String('-', 25));
 
+            XBOXGames Halo = new XBOXGames(
+              "Halo 5",
+              2800,
+              "343 Industries",
+              "Шутер от первого лица",
+              false
+          );
+            Console.WriteLine("Игры на XBOX");
+            Console.WriteLine("Название: " + Halo.Name);
+            Console.WriteLine("Цена: " + Halo.Price);
+            Console.WriteLine("Издатель: " + Halo.Publisher);
+            Console.WriteLine("Жанр: " + Halo.Genre);
+            Console.WriteLine("Использование Web-камеры: " + Halo.AvailabilityOfWebcam);
+            Console.WriteLine(new String('-', 25));
+
+            XBOXGames SunsetOverdrive = new XBOXGames(
+             "SunsetOverdrive",
+             2200,
+             "Insomniac Games",
+             "Шутер от третьего лица",
+             false
+         );
+            Console.WriteLine("Игры на XBOX");
+            Console.WriteLine("Название: " + Halo.Name);
+            Console.WriteLine("Цена: " + Halo.Price);
+            Console.WriteLine("Издатель: " + Halo.Publisher);
+            Console.WriteLine("Жанр: " + Halo.Genre);
+            Console.WriteLine("Использование Web-камеры: " + Halo.AvailabilityOfWebcam);
+            Console.WriteLine(new String('-', 25));
+
+            //пекашные игры
             PCGames Destiny2 = new PCGames(
                 "Destiny 2",
                 2000,
@@ -60,6 +123,37 @@ namespace Shops
             Console.WriteLine("Видеокарта: " + Destiny2.Genre + "и выше");
             Console.WriteLine(new String('-', 25));
 
+            PCGames Witcher = new PCGames(
+                "Witcher 3",
+                1500,
+                "CD Projekt RED",
+                "Action/RPG",
+                "GTX 770"
+            );
+            Console.WriteLine("Игры на PS");
+            Console.WriteLine("Название: " + Witcher.Name);
+            Console.WriteLine("Цена: " + Witcher.Price);
+            Console.WriteLine("Издатель: " + Witcher.Publisher);
+            Console.WriteLine("Жанр: " + Witcher.Genre);
+            Console.WriteLine("Видеокарта: " + Witcher.Genre + "и выше");
+            Console.WriteLine(new String('-', 25));
+
+            PCGames PUBG= new PCGames(
+                "PlayerUnknown's Battlegrounds",
+                900,
+                "Bluehole",
+                "Королевская битва",
+                "GTX 660 2GB"
+            );
+            Console.WriteLine("Игры на PS");
+            Console.WriteLine("Название: " + PUBG.Name);
+            Console.WriteLine("Цена: " + PUBG.Price);
+            Console.WriteLine("Издатель: " + PUBG.Publisher);
+            Console.WriteLine("Жанр: " + PUBG.Genre);
+            Console.WriteLine("Видеокарта: " + PUBG.Genre + "и выше");
+            Console.WriteLine(new String('-', 25));
+
+            //витовские игры
             PSVita CallOfDuty = new PSVita(
                "CallOfDuty:BlackOpsDeclassified",
                1500,
@@ -75,6 +169,37 @@ namespace Shops
             Console.WriteLine("Наличие AR card: " + CallOfDuty.ARcard);
             Console.WriteLine(new String('-', 25));
 
+            PSVita TTT = new PSVita(
+               "Table TOP Tanks",
+               70,
+               "Боевик",
+               "SCEE",
+               true
+           );
+            Console.WriteLine("Игра на PS Vita");
+            Console.WriteLine("Название: " + TTT.Name);
+            Console.WriteLine("Цена: " + TTT.Price);
+            Console.WriteLine("Издеатель: " + TTT.Publisher);
+            Console.WriteLine("Жанр: " + TTT.Genre);
+            Console.WriteLine("Наличие AR card: " + TTT.ARcard);
+            Console.WriteLine(new String('-', 25));
+
+            PSVita Batman = new PSVita(
+              "LEGO: Batman 3",
+              1300,
+              "Action - adventure",
+              "Warner Bros. Interactive Entertainment",
+              false
+          );
+            Console.WriteLine("Игра на PS Vita");
+            Console.WriteLine("Название: " + Batman.Name);
+            Console.WriteLine("Цена: " + Batman.Price);
+            Console.WriteLine("Издеатель: " + Batman.Publisher);
+            Console.WriteLine("Жанр: " + Batman.Genre);
+            Console.WriteLine("Наличие AR card: " + Batman.ARcard);
+            Console.WriteLine(new String('-', 25));
+
+            //виивские игры
             NintendoWii Mario = new NintendoWii(
                "MarioKart",
                2530,
@@ -89,6 +214,39 @@ namespace Shops
             Console.WriteLine("Жанр: " + Mario.Genre);
             Console.WriteLine("Наличие Wii Wheel: " + Mario.WiiWheel);
             Console.WriteLine(new String('-', 25));
+
+
+            NintendoWii Resident = new NintendoWii(
+               "Resident Evil 4: Wii Edition",
+               1500,
+               "Capcom Production Studio 4",
+               "Боевик от третьего лица/Survival horror",
+               false
+           );
+            Console.WriteLine("Игра на NintendoWii");
+            Console.WriteLine("Название: " + Resident.Name);
+            Console.WriteLine("Цена: " + Resident.Price);
+            Console.WriteLine("Издеатель: " + Resident.Publisher);
+            Console.WriteLine("Жанр: " + Resident.Genre);
+            Console.WriteLine("Наличие Wii Wheel: " + Resident.WiiWheel);
+            Console.WriteLine(new String('-', 25));
+
+            NintendoWii Naruto = new NintendoWii(
+               "Naruto Shippuden: Gekitou Ninja Taisen Special",
+               1300,
+               "Takara Tomy",
+               "Fighting",
+               false
+           );
+            Console.WriteLine("Игра на NintendoWii");
+            Console.WriteLine("Название: " + Naruto.Name);
+            Console.WriteLine("Цена: " + Naruto.Price);
+            Console.WriteLine("Издеатель: " + Naruto.Publisher);
+            Console.WriteLine("Жанр: " + Naruto.Genre);
+            Console.WriteLine("Наличие Wii Wheel: " + Naruto.WiiWheel);
+            Console.WriteLine(new String('-', 25));
+
+
 
             Product[] products = new Product[]
             {
