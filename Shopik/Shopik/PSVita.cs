@@ -1,4 +1,5 @@
-﻿namespace Shops
+﻿using System;
+namespace Shops
 {
     public class PSVita : Product
     {
@@ -12,10 +13,24 @@
             Genre = genre;
             ARcard = arcard;
         }
-
         public override double GetDiscountPrice(User user)
         {
-            return Price / 2;
+            if (Price > 1000)
+            {
+                return Price / 2;
+            }
+                return Price;
         }
+        public override void GetWrite()
+        {
+            Console.WriteLine("Игра на PS Vita");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Издеатель: " + Publisher);
+            Console.WriteLine("Жанр: " + Genre);
+            Console.WriteLine("Наличие AR card: " + ARcard);
+            Console.WriteLine(new String('-', 25));
+        }
+        
     }
 }

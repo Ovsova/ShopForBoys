@@ -1,4 +1,5 @@
-﻿namespace Shops
+﻿using System;
+namespace Shops
 {
     public class NintendoWii : Product
     {
@@ -12,10 +13,23 @@
             Genre = genre;
             WiiWheel = wiiwheel;
         }
-
+        public override void GetWrite()
+        {
+            Console.WriteLine("Игра на NintendoWii");
+            Console.WriteLine("Название: " + Name);
+            Console.WriteLine("Цена: " + Price);
+            Console.WriteLine("Издеатель: " + Publisher);
+            Console.WriteLine("Жанр: " + Genre);
+            Console.WriteLine("Наличие Wii Wheel: " + WiiWheel);
+            Console.WriteLine(new String('-', 25));
+        }
         public override double GetDiscountPrice(User user)
         {
-            return Price / 2;
+            if (user.Date == 23 && WiiWheel == false)
+            {
+                return Price * 0.6;
+            }
+            return Price;
         }
     }
 }
